@@ -1,0 +1,12 @@
+// The below regex codes can be used to extract tracking IDs at a page level when crawling websites using Screaming Frog. Enter the tracking code name (eg: Facebook Pixel), set the condition to regex, and then enter then enter the regex values as assigned below 
+
+UA Code -                 ["'](UA-.*?)["']
+Adwords Code -            ["'](AW-.*?)["']
+GTM Code -                ["'](GTM-.*?)["']
+GA4 Code -                ["'](G-.*?)["']
+FB Pixel -                fbq\(["']init["'], ["'](.*?)["']
+Bing Ads UET -            \{ti:["'](.*?)["']\}
+Adroll Advertiser ID -    adroll_adv_id = ["'](.*?)["']
+Adroll Pixel ID -         adroll_pix_id = ["'](.*?)["']
+
+// Original tweet with image of setup here: https://twitter.com/samtmcr/status/1582671905101819904?s=20&t=4gZo88Gqdos4lfaD1AajwA
