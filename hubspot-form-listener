@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  window.addEventListener("message", function(event) {
+    if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted') {
+      window.dataLayer.push({
+        'event': 'hubspot-form-success',
+        'hs-form-guid': event.data.id
+      });
+    }
+  });
+</script>
+
+
+# Then add a datalayer variable of hs-form-guid - this will output the form ID. If the client is using the same form across multiple pages and needs them tracked individually, use the page path in the trigger and set as the page the form is actually on. 
